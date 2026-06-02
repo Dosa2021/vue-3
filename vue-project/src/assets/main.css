@@ -10,26 +10,6 @@ p {
   margin: 0;
 }
 
-/* headerのスタイル */
-
-header {
-  background: #eee;
-  text-align: center;
-  padding: 32px 0;
-  display: flex;
-  flex-direction: column;
-}
-
-header img {
-  border-radius: 50%;
-}
-
-h1 {
-  margin: 16px 0 0;
-  font-weight: normal;
-  font-size: 24px;
-}
-
 /* mainのスタイル */
 
 main {

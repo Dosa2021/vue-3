@@ -1,17 +1,9 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
+import Header from "./components/Header.vue";
 </script>
 
 <template>
-  <header>
-    <p>
-      <img src="/mei.webp" />
-    </p>
-    <h1>山田太郎</h1>
-    <p>Webデザイナー見習いです</p>
-  </header>
-
+  <Header />
   <main>
     <h2>WORKS</h2>
     <section>
