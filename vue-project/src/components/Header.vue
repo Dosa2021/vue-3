@@ -1,10 +1,14 @@
+<script setup>
+const intro = 'フロントエンドエンジニア見習いです'; 
+</script>
+
 <template>
   <header>
     <p>
       <img src="/mei.webp" />
     </p>
     <h1>山田太郎</h1>
-    <p>Webデザイナー見習いです</p>
+    <p v-text="intro"></p>
   </header>
 </template>
 
