@@ -1,27 +1,36 @@
+<script setup lang="ts">
+import WorkSection from './WorkSection.vue';
+const work_1 = {
+  imgUrl: '/mei_1.jpg',
+  titel: 'すごい勇者ゲーム',
+  desc: 'すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。'
+}
+
+const works = [
+  {
+    imgUrl: '/mei_1.jpg',
+    title: 'すごい勇者ゲーム',
+    desc: 'すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。'
+  },
+  {
+    imgUrl: '/mei_2.jpg',
+    title: 'すごい勇者ゲーム-2',
+    desc: 'すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。'
+  },
+  {
+    imgUrl: '/mei_3.jpg',
+    title: 'すごい勇者ゲーム-3',
+    desc: 'すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。'
+  }
+]
+</script>
+
 <template>
   <main>
     <h2>WORKS</h2>
-    <section>
-      <img src="" alt="すごい勇者ゲーム" width="400" height="240" />
-      <h3>すごい勇者ゲーム</h3>
-      <p>
-        すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。すごい勇者ゲームです。
-      </p>
-    </section>
-    <section>
-      <img src="" alt="すごい宝物ゲーム" width="400" height="240" />
-      <h3>すごい宝物ゲーム</h3>
-      <p>
-        すごい宝物ゲームです。すごい宝物ゲームです。すごい宝物ゲームです。すごい宝物ゲームです。すごい宝物ゲームです。すごい宝物ゲームです。すごい宝物ゲームです。
-      </p>
-    </section>
-    <section>
-      <img src="" alt="すごいカードゲーム" width="400" height="240" />
-      <h3>すごいカードゲーム</h3>
-      <p>
-        すごいカードゲームです。すごいカードゲームです。すごいカードゲームです。すごいカードゲームです。すごいカードゲームです。すごいカードゲームです。すごいカードゲームです。
-      </p>
-    </section>
+    <!-- <WorkSection v-bind="works[0]" /> -->
+    <!-- <WorkSection v-bind="works[1]" /> -->
+     <WorkSection v-for="work in works" v-bind="work"/>
   </main>
 </template>
 
@@ -41,15 +50,5 @@ h3 {
   margin: 16px 0 0;
   font-weight: normal;
   font-size: 20px;
-}
-
-section {
-  width: 400px;
-  margin: 64px auto 0;
-}
-
-section p {
-  margin-top: 16px;
-  line-height: 1.8;
 }
 </style>

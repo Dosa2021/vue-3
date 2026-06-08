@@ -4,6 +4,11 @@ import { ref } from 'vue';
 const intro = 'フロントエンドエンジニア見習いです'; 
 const imgUrl = '/mei.webp';
 const count = ref(0)
+const tags = [
+  '#HTML',
+  '#CSS',
+  '#JavaScript'
+]
 
 function increment() {
   // count++
@@ -31,6 +36,15 @@ function increment() {
     <!-- <button v-on:click="count++">いいね！（{{ count }}）</button> -->
     <!-- <button @click="count++">いいね！（{{ count }}）</button> -->
     <button @click="increment">いいね！（{{ count }}）</button>
+
+    <!-- v-if -->
+    <p v-if="count > 5">応援ありがとう</p>
+    <p v-else>いいねお願いします</p>
+
+    <!-- v-for -->
+    <ul>
+      <li v-for="tag in tags">{{ tag }}</li>
+    </ul>
   </header>
 </template>
 
