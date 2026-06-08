@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: ./vue-project
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./vue-project:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
