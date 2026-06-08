@@ -1,7 +1,9 @@
 <template>
-  <footer>
-    <small>(c) dotinstall.com</small>
-  </footer>
+  <div>
+    <footer>
+      <small>(c) dotinstall.com</small>
+    </footer>
+  </div>
 </template>
 
 <style scoped>
